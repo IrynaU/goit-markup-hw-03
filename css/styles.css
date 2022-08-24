@@ -84,6 +84,11 @@ ul {
   justify-content: space-between; 
 }
 
+/* .page-header {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
+
+
 .navigation {
   display: flex;
   align-items: center;
@@ -202,7 +207,9 @@ width: 216px;
 height: 50px;
 }
 
-
+.hidden {
+  visibility: hidden;
+}
 
 .about-work {
   display: flex;
@@ -226,6 +233,10 @@ line-height: 1.71;
 color: var(--primary-text-color-theme-light);
 }
 
+.title-conteiner {
+ padding-bottom: 0px;
+}
+
 .about-section-title {
   display: flex;
   align-items: center;
@@ -234,7 +245,6 @@ color: var(--primary-text-color-theme-light);
 
 
 .team-title {
-  padding-bottom: 95px;
   display: flex;
   align-items: center;
 }
@@ -263,17 +273,13 @@ color: var(--primary-text-color-theme-light);
 
 
 .section-title {
-padding-top: 95px;
-margin-bottom: 60px;
+padding-bottom: 50px;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 }
 
 
-.title-conteiner {
-  padding-bottom: 95px;
-}
 
 
 .team-container {
@@ -292,8 +298,7 @@ text-align: center;
 }
 
 .team-position {
-margin-bottom: 33px;
-padding-bottom: 125px;
+padding-bottom: 30px;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
@@ -318,6 +323,8 @@ color: var(--primary-text-color-theme-light);
 .footer-logo {
   color: var(--primary-text-color);
   margin-bottom: 20px;
+  margin-right: 0;
+  display: flex;
 }
 
 
@@ -325,6 +332,7 @@ color: var(--primary-text-color-theme-light);
 .footer-conteiner {
   background-color: var(--accent-color);
   height: 252px;
+  padding-bottom: 60px;
 }
 
 
@@ -333,6 +341,10 @@ color: var(--primary-text-color-theme-light);
 font-weight: 400;
 line-height: 1.71;
 color: var(--primary-text-color);
+}
+
+.maps-contact-phone:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 
@@ -345,6 +357,10 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
+border: none;
+padding: 6px 22px;
+border-radius: 4px;
+margin-bottom: 50px;
 }
 
 .btn:focus,
@@ -388,7 +404,6 @@ text-align: center;
 .flex-conteiner {
   width: calc((100% / 60px) / 3);
   padding-top: 30px;
-  margin-bottom: 94px;
 }
 
 
@@ -404,6 +419,7 @@ text-align: center;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+margin-top: 4px;
 }
 
 .text-container {
