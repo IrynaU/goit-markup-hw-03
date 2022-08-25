@@ -28,7 +28,7 @@ ol {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -74,8 +74,10 @@ ul {
 
 .header-container {
   background-color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+ }
+
+ .page-header {
+  padding: 25px 0;
  }
 
 .page-header-container {
@@ -84,9 +86,7 @@ ul {
   justify-content: space-between; 
 }
 
-/* .page-header {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
+
 
 
 .navigation {
@@ -202,9 +202,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin: auto;
 margin-top: 30px;
-border: none
-width: 216px;
-height: 50px;
+}
+
+.modal-open-btn {
+  border: none
+  width: 216px;
+  height: 50px;
 }
 
 .hidden {
@@ -217,6 +220,10 @@ height: 50px;
 
 .about-work-title:not(:last-child) {
   margin-right: 30px;
+}
+
+.about-work-title {
+  width: 270px;
 }
 
 
@@ -234,7 +241,7 @@ color: var(--primary-text-color-theme-light);
 }
 
 .title-conteiner {
- padding-bottom: 0px;
+ padding-top: 0px;
 }
 
 .about-section-title {
@@ -273,18 +280,17 @@ color: var(--primary-text-color-theme-light);
 
 
 .section-title {
-padding-bottom: 50px;
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 }
 
-
-
-
-.team-container {
+.team {
   background-color: var(--third-color);
 }
+
+
 
 
 
@@ -311,6 +317,7 @@ color: var(--primary-text-color-theme-light);
 .footer-page {
   background-color: var(--accent-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
@@ -324,7 +331,7 @@ color: var(--primary-text-color-theme-light);
   color: var(--primary-text-color);
   margin-bottom: 20px;
   margin-right: 0;
-  display: flex;
+  display: block;
 }
 
 
@@ -360,7 +367,6 @@ text-align: center;
 border: none;
 padding: 6px 22px;
 border-radius: 4px;
-margin-bottom: 50px;
 }
 
 .btn:focus,
@@ -387,10 +393,7 @@ margin-bottom: 50px;
 }
 
 
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .section-main-container {
   padding-left: auto;
@@ -401,13 +404,15 @@ margin-bottom: 50px;
   margin-right: 10px;
 }
 
-.flex-conteiner {
-  width: calc((100% / 60px) / 3);
-  padding-top: 30px;
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 
-
+/* width: calc((100% / 60px) / 3);
+  padding-top: 30px; */
 
 
 .active {
@@ -419,7 +424,7 @@ margin-bottom: 50px;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-margin-top: 4px;
+margin-bottom: 4px;
 }
 
 .text-container {
