@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -40,7 +41,7 @@
     <main>
         <section class="section-main-container section">
             <div class="container">
-                <h1 class="hidden"hidden>Приклади</h1>
+                <h1 class="visually-hidden"hidden>Приклади</h1>
                 <ul class="btn-button">
                     <li class="btn-active"><button class="btn active" type="button">Все</button></li>
                     <li class="btn-active"><button class="btn" type="button">Веб-сайти</button></li>
@@ -139,11 +140,11 @@
         
     </main>
     <!--Підвал Сторінки-->
-    <div class="footer-conteiner">
-        <footer class="footer-page container">
+    <footer class="footer-page footer-conteiner">
+        <div class="container">
             <a class="logo link footer-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
             <address class="address">
-                <ul>
+                <ul class="contact-link">
                     <li class="maps-contact-phone">
                         <a class="maps link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a> 
                     </li>
@@ -154,9 +155,10 @@
                         <a class="contact-phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </address>
-        </footer>
-    </div>
+            </address>  
+        </div>
+        
+    </footer>
     
 
     
